@@ -112,60 +112,70 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     }
   }
 
-  
-
   Future<void> _showStartDialog() async {
-    return showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          backgroundColor: theme.white,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16.o),
+  return showDialog(
+    context: context,
+    barrierDismissible: false,
+    builder: (BuildContext context) {
+      return Dialog(
+        backgroundColor: theme.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16.o),
+        ),
+        insetPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+        child: ConstrainedBox(
+          constraints: BoxConstraints(
+            maxWidth: 1.sw(context) * 0.8,
+            maxHeight: 1.sh(context) * 0.8,
           ),
-          title: Text(
-            'Testga tayyormisiz?',
-            textAlign: TextAlign.center,
-            style: theme.textStyle.copyWith(
-              fontSize: 24.o,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              20.o.gapY,
-              SizedBox(
-                width: double.infinity,
-                height: 50.o,
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                    _startTimer();
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: theme.blue,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12.o),
-                    ),
-                  ),
-                  child: Text(
-                    'Tayyorman',
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    'Testga tayyormisiz?',
+                    textAlign: TextAlign.center,
                     style: theme.textStyle.copyWith(
-                      fontSize: 16.o,
-                      color: theme.white,
+                      fontSize: 24.o,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                ),
+                  20.o.gapY,
+                  SizedBox(
+                    width: double.infinity,
+                    height: 50.o,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                        _startTimer();
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: theme.blue,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12.o),
+                        ),
+                      ),
+                      child: Text(
+                        'Tayyorman',
+                        style: theme.textStyle.copyWith(
+                          fontSize: 16.o,
+                          color: theme.white,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
-        );
-      },
-    );
-  }
+        ),
+      );
+    },
+  );
+}
 
   @override
   Widget build(BuildContext context) {
