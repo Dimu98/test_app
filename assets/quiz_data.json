@@ -1,0 +1,104 @@
+{
+    "questions": [
+      {
+        "question": "Which word is a synonym for 'happy'?",
+        "options": [
+          "Sad",
+          "Joyful",
+          "Angry",
+          "Tired"
+        ],
+        "correctAnswer": "Joyful"
+      },
+      {
+        "question": "Choose the correct form of the verb: 'She _____ to school every day.'",
+        "options": [
+          "go",
+          "goes",
+          "going",
+          "gone"
+        ],
+        "correctAnswer": "goes"
+      },
+      {
+        "question": "What is the past tense of 'eat'?",
+        "options": [
+          "eat",
+          "ate",
+          "eaten",
+          "eating"
+        ],
+        "correctAnswer": "ate"
+      },
+      {
+        "question": "Which sentence is grammatically correct?",
+        "options": [
+          "They is going to the park",
+          "They are going to the park",
+          "They am going to the park",
+          "They be going to the park"
+        ],
+        "correctAnswer": "They are going to the park"
+      },
+      {
+        "question": "What is the opposite of 'beautiful'?",
+        "options": [
+          "Pretty",
+          "Lovely",
+          "Ugly",
+          "Nice"
+        ],
+        "correctAnswer": "Ugly"
+      },
+      {
+        "question": "Choose the correct article: '_____ apple a day keeps the doctor away.'",
+        "options": [
+          "A",
+          "An",
+          "The",
+          "No article needed"
+        ],
+        "correctAnswer": "An"
+      },
+      {
+        "question": "Which is the correct plural form of 'child'?",
+        "options": [
+          "childs",
+          "childes",
+          "children",
+          "child"
+        ],
+        "correctAnswer": "children"
+      },
+      {
+        "question": "What time expression is correct: 'I have been studying English _____ two years.'",
+        "options": [
+          "since",
+          "for",
+          "during",
+          "while"
+        ],
+        "correctAnswer": "for"
+      },
+      {
+        "question": "Which word is a preposition?",
+        "options": [
+          "Run",
+          "Under",
+          "Happy",
+          "Quick"
+        ],
+        "correctAnswer": "Under"
+      },
+      {
+        "question": "What is the comparative form of 'good'?",
+        "options": [
+          "Gooder",
+          "Better",
+          "More good",
+          "Goodest"
+        ],
+        "correctAnswer": "Better"
+      }
+    ]
+  }
